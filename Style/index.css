@@ -247,3 +247,32 @@ body,html{
 #close:hover{
     background-color: rgb(230,230,230);
 }
+#desktop{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: rgb(170, 22, 255);
+    font-size: 0px;
+    animation: desktopbig 0.7s forwards;
+    animation-delay: 1.8s;
+}
+#desktop:hover{
+    color: rgb(202, 97, 255);
+}
+#desktop:active{
+    color: rgb(215, 135, 255);
+}
+@keyframes desktopbig{
+    0%{
+        font-size: 0px;
+    }
+    50%{
+        font-size: 25px;
+    }
+    100%{
+        font-size: 20px;
+    }
+}
